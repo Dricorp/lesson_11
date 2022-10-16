@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700;900&display=swap");
+
+body {
+	font-family: "Roboto Slab";
+	background: rgb(247, 244, 244);
+	max-width: 1280px;
+	margin: 0 auto;
+}
+.wrapper {
+	overflow: hidden;
+	position: relative;
+	min-height: 100%;
+}
+.header {
+	position: relative;
+	width: 100%;
+	left: 0;
+	top: 0;
+	padding: 15px;
+	z-index: 999;
+	background-color: skyblue;
+}
+.header__container {
+	max-width: 100%;
+}
+
+.header__menu {
+}
+.menu {
+	font-size: 20px;
+}
+
+.menu__items {
+	position: relative;
+	display: inline-block;
+}
+.menu__items:not(:last-child) {
+	margin-right: 300px;
+}
+.menu__items:hover .sub-menu {
+	opacity: 1;
+	visibility: visible;
+	top: 100%;
+}
+.menu__items:hover {
+	text-decoration: underline;
+}
+.menu__link {
+}
+.menu__sub-menu {
+	position: absolute;
+	min-width: 180px;
+	top: 130%;
+	left: 0;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.3s ease 0s;
+}
+.sub-menu {
+}
+.sub-menu__items {
+}
+.sub-menu__items:not(:last-child) {
+	margin-bottom: 8px;
+}
+
+.sub-menu__link {
+	font-size: 18px;
+}
+.sub-menu__link:hover {
+	text-decoration: underline;
+	background: skyblue;
+}
+
+/*=====================*/
+
+.main {
+}
+.road {
+}
+.road__container {
+}
+.road__background {
+	margin-bottom: 25px;
+	position: relative;
+	max-width: 100%;
+}
+.road__car {
+	position: absolute;
+	left: 210px;
+	top: 380px;
+	z-index: 2;
+}
+.road__car:hover {
+	left: 50px;
+	top: 380px;
+	transition: all 1.5s ease-in 0s;
+}
+.road__fly {
+	position: absolute;
+	left: 200px;
+	top: 150px;
+	z-index: 2;
+}
+.road__fly img {
+	width: 15%;
+}
+.road__fly:hover {
+	left: 500px;
+	top: 280px;
+	transition: all 2s ease-in 0s;
+}
+.road__gomer {
+	position: absolute;
+	left: 670px;
+	top: 530px;
+	z-index: 1;
+}
+.road__gomer img {
+	width: 15%;
+}
+.road__text {
+	font-size: 16px;
+	font-style: italic;
+	font-weight: 600;
+	letter-spacing: inherit;
+	line-height: 1.5;
+}
+.footer {
+	max-width: 100%;
+	background: yellowgreen;
+	padding: 25px;
+	font-size: 20px;
+	text-align: center;
+}
